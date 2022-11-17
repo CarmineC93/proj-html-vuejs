@@ -1,1 +1,30 @@
 @import "node_modules/bootstrap/scss/bootstrap";
+
+// RESET
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+}
+
+// COMMON
+
+.container{
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    // debug
+    background-color: rgba(255, 0, 0, 0.324);
+}
+
+.ms_btn_full{
+
+}
+
+.ms_btn_void{
+    
+}
