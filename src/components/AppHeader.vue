@@ -20,12 +20,12 @@ export default {
     <header>
         <div class="contacts">
             <div class="container">
-                <div class="flex justify-between">
+                <div class="d-flex justify-content-between">
                     <div>
                         <p>Orari di apertura</p>
                     </div>
 
-                    <div class="flex ">
+                    <div class="d-flex ">
                         <p>telefono</p>
                         <p>mail</p>
                         <div>social icon</div>
@@ -35,13 +35,13 @@ export default {
         </div>
         
         <div class="container">
-            <nav class="flex justify-between">
+            <nav class="d-flex justify-content-between">
 
                 <div class="logo">
                     <img src="../assets/img/logo_48.png" alt="logo">
                 </div>
 
-                <div class="flex">
+                <div class="d-flex">
                     <AppNav v-for="(link, index) in store.pages" :pageName="link.name"/>
 
                     <button> GET IN TOUCH</button>

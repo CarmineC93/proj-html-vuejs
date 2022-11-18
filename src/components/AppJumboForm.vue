@@ -8,22 +8,22 @@ export default {
 
 <template>
     <div class="jumbo">
-        <div class="container">
-            <div class="get_in_touch flex column">
+        <div class="container d-flex justify-content-end">
+            <div class="get_in_touch d-flex flex-column align-items-start " >
                 <h5>FUSIONS & ACQUISITION</h5>
                 <h1>Insurance Consulting</h1>
-                <form class="flex">
+                <form class="d-flex row row-cols-2">
                     <label for="name">name</label>
-                    <input type="text" id="name" placeholder="Name">
+                    <input class="col" type="text" id="name" placeholder="Name">
     
                     <label for="email">name</label>
-                    <input type="email" id="email" placeholder="Email">
+                    <input class="col" type="email" id="email" placeholder="Email">
                 
-                    <label for="phone">name</label>
-                    <input type="number" id="phone" placeholder="Phone">
+                    <label for="phone ">name</label>
+                    <input class="col g-1" type="tel" id="phone" placeholder="Phone">
     
                     <label for="more">name</label>
-                    <select name="more" id="more">
+                    <select class="col g-1 gy-1" name="more" id="more">
                         <option value="More Info">More Info</option>
                         <option value="About">About us</option>
                         <option value="Services">Services</option>
@@ -31,7 +31,7 @@ export default {
                         <option value="Contracts">Contracts</option>
                     </select>
     
-                    <div>
+                    <div class="col d-flex flex-grow-1">
                         <button> GET IN TOUCH</button>
                         <button> READ MORE</button>
                     </div>
@@ -52,13 +52,25 @@ export default {
     // debug
     height: 700px;
     .get_in_touch{
+        width: 35%;
+        justify-content: flex-end;
 
         form{
-            width: 100px;
+            width: 300px;
         }
 
         label{
             display: none;
+        }
+
+        input, select{
+            width: 45%;
+            margin: 0.5rem 0 0 11px;
+        }
+        
+        button{
+            margin-right: 0.5rem;
+            margin-top: 0.5rem;
         }
     }
     
