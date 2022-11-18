@@ -31,5 +31,43 @@ export const store = reactive({
             url: "",
             active: false
         },
+    ],
+    services: [
+        {
+            name: "Audit & Assurance",
+            icon: "",
+            url: "",
+            text: "Lorem ipsum dolor sit amet consectetur adipisicing."
+        },
+        {
+            name: "Financial Advisory",
+            icon: "",
+            url: "",
+            text: "Lorem ipsum dolor sit amet consectetur adipisicing."
+        },
+        {
+            name: "Analytics and M&A",
+            icon: "",
+            url: "",
+            text: "Lorem ipsum dolor sit amet consectetur adipisicing."
+        },
+        {
+            name: "Middle Marketing",
+            icon: "",
+            url: "",
+            text: "Lorem ipsum dolor sit amet consectetur adipisicing."
+        },
+        {
+            name: "Legal Consulting",
+            icon: "",
+            url: "",
+            text: "Lorem ipsum dolor sit amet consectetur adipisicing."
+        },
+        {
+            name: "Regulatory Risk",
+            icon: "",
+            url: "",
+            text: "Lorem ipsum dolor sit amet consectetur adipisicing."
+        }
     ]
 });

@@ -42,7 +42,7 @@ export default {
                 </div>
 
                 <div class="d-flex">
-                    <AppNav v-for="(link, index) in store.pages" :pageName="link.name"/>
+                    <AppNav v-for="(link, index) in store.pages" :key="index" :pageName="link.name"/>
 
                     <button> GET IN TOUCH</button>
                 </div>

@@ -7,7 +7,7 @@ export default {
 </script>
 
 <template>
-    <div class="jumbo m-b-5">
+    <div class="jumbo pb-5">
         <div class="container d-flex justify-content-end">
             <div class="get_in_touch d-flex flex-column align-items-start " >
                 <h5>FUSIONS & ACQUISITION</h5>
