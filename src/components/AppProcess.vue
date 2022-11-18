@@ -7,7 +7,7 @@ export default{
 </script>
 
 <template>
-    <div class="py-5">
+    <section class="py-5">
         <div class="ms_hhp text-center pb-3">
             <h6>How it works in practice</h6>
             <h2>Process Management</h2>
@@ -21,7 +21,7 @@ export default{
                     <div class="ms_liner"></div>
                     <span class="ms_ball">01</span>
                     <span>
-                        <h5>Collection of informations</h5>
+                        <h5>Collection of information</h5>
                         <p>Lorem ipsum dolor sit amet consectetur.</p>
                     </span>
                 </div>
@@ -62,7 +62,7 @@ export default{
             </div>
 
         </div>
-    </div>
+    </section>
 </template>
 
 <style lang="scss" scoped>

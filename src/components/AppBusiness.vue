@@ -17,7 +17,7 @@ export default{
 </script>
 
 <template>
-    <div class="container py-5">
+    <section class="container py-5">
         <div class="row row-cols-1">
             <div class="col d-flex ">
                 <div class="ms_hhp">
@@ -35,7 +35,7 @@ export default{
                     :text="service.text" :icon="service.icon" />
             </div>
         </div>
-    </div>
+    </section>
 </template>
 
 <style lang="scss" scoped>
