@@ -7,7 +7,7 @@ export default{
 </script>
 
 <template>
-    <section class="py-5">
+    <section class="py-5" id="team">
         <div class="container d-flex">
             <div class="ms_col_60 d-flex flex-column">
                 <div class="ms_hhp d-flex flex-column">

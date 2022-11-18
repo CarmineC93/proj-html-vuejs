@@ -11,7 +11,7 @@ export default {
 
 <template>
         <ul>
-            <li> {{pageName}} </li>
+            <li> <a :href="`#${pageName}`" >{{pageName}}</a> </li>
         </ul>
 </template>
 

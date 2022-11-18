@@ -64,8 +64,5 @@ export default {
             height: 30px;
             color: white;
         }
-        .container{
-            height: 100px;
-        }
     }
 </style>

@@ -17,7 +17,7 @@ export default{
 </script>
 
 <template>
-    <section class="container py-5">
+    <section class="container py-5" id="services">
         <div class="row row-cols-1">
             <div class="col d-flex ">
                 <div class="ms_hhp">
@@ -25,7 +25,7 @@ export default{
                     <h2>Exellence in Services</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus distinctio odio nisi ipsum perferendis nesciunt officiis repudiandae voluptates optio sit expedita in, id aliquam quasi.</p>
                 </div>
-                <div>
+                <div class="ms_botton-down">
                     <button>SEE ALL</button>
                 </div>
             </div>

@@ -7,7 +7,7 @@ export default {
 </script>
 
 <template>
-    <div class="jumbo pb-5">
+    <section class="jumbo pb-5" id="home">
         <div class="container d-flex justify-content-end">
             <div class="get_in_touch d-flex flex-column align-items-start " >
                 <h5>FUSIONS & ACQUISITION</h5>
@@ -38,7 +38,7 @@ export default {
                 </form>
             </div>
         </div>
-    </div>
+    </section>
 </template>
 
 <style lang="scss" scoped>
@@ -49,8 +49,6 @@ export default {
     background-size: cover;
     background-repeat: no-repeat;
 
-    // debug
-    height: 400px;
     .get_in_touch{
         width: 35%;
         justify-content: flex-end;

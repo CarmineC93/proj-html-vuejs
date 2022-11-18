@@ -8,7 +8,7 @@ export default {
 
 <template>
     <section>
-        <div class="container">
+        <section class="container" id="about">
             <div class="row py-5">
                 <div class="col ms_hhp">
                     <h6>About the network</h6>
@@ -41,7 +41,7 @@ export default {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     </section>
 </template>
 
