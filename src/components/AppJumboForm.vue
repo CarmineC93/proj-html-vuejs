@@ -18,7 +18,7 @@ export default {
     
                     <label for="email">name</label>
                     <input type="email" id="email" placeholder="Email">
-    
+                
                     <label for="phone">name</label>
                     <input type="number" id="phone" placeholder="Phone">
     
@@ -52,7 +52,6 @@ export default {
     // debug
     height: 600px;
     .get_in_touch{
-        align-items: flex-end;
 
         form{
             width: 100px;
