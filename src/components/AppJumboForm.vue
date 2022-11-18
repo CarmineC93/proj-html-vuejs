@@ -19,8 +19,8 @@ export default {
                     <label for="email">name</label>
                     <input class="col" type="email" id="email" placeholder="Email">
                 
-                    <label for="phone ">name</label>
-                    <input class="col g-1" type="tel" id="phone" placeholder="Phone">
+                    <label for="phone">name</label>
+                    <input class="col g-1" type="tel" id="phone" pattern="[0-9]{9-11}" placeholder="  Phone">
     
                     <label for="more">name</label>
                     <select class="col g-1 gy-1" name="more" id="more">
