@@ -7,7 +7,7 @@ export default {
 </script>
 
 <template>
-    <div class="jumbo">
+    <div class="jumbo m-b-5">
         <div class="container d-flex justify-content-end">
             <div class="get_in_touch d-flex flex-column align-items-start " >
                 <h5>FUSIONS & ACQUISITION</h5>
@@ -50,7 +50,7 @@ export default {
     background-repeat: no-repeat;
 
     // debug
-    height: 700px;
+    height: 400px;
     .get_in_touch{
         width: 35%;
         justify-content: flex-end;
