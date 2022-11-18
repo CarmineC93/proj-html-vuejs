@@ -18,13 +18,30 @@ img{
     max-width: 1200px;
     margin: 0 auto;
     // debug
-    background-color: rgba(255, 0, 0, 0.324);
+    background-color: rgba(255, 196, 0, 0.324);
 }
 
 .ms_btn_full{
-
+    color:white;
 }
 
 .ms_btn_void{
-    
+    color:white;
+
+}
+
+.flex{
+    display: flex;
+}
+
+.column{
+    flex-direction: column;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.justify-between{
+    justify-content: space-between;
 }
