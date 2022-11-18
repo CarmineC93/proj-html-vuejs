@@ -50,7 +50,7 @@ export default {
     background-repeat: no-repeat;
 
     // debug
-    height: 600px;
+    height: 700px;
     .get_in_touch{
 
         form{
