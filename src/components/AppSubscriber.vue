@@ -18,11 +18,11 @@ export default {
     
                 <div class="col-6">
                     <form class="d-flex flex-column">
-                        <label for=""></label>
-                        <input type="text" placeholder="Name">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Name">
     
-                        <label for=""></label>
-                        <input type="email" placeholder="Email">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Email">
                     </form>
                     <div>
                         <button>SUBSCRIBE</button>
@@ -40,7 +40,13 @@ export default {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    
+    .ms_hhp{
+        color: white;
+    }
+
+    label{
+        display: none;
+    }
     input{
         width: 70%;
         margin-bottom: 1rem;
@@ -48,5 +54,4 @@ export default {
     }
 }
     
-
 </style>
