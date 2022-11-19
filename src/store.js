@@ -30,7 +30,7 @@ export const store = reactive({
             name: "blog",
             url: "",
             active: false
-        },
+        }
     ],
     services: [
         {
