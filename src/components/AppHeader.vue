@@ -53,7 +53,7 @@ export default {
                     <AppNav v-for="(link, index) in store.pages" :key="index" :pageName="link.name"/>
                 </ul>
 
-                <a href="" class="ms_btn_full ms-3"> GET IN TOUCH</a>
+                <a href="" class="ms_btn ms_btn_full ms-3"> GET IN TOUCH</a>
                 
             </nav>           
         </div>
@@ -70,6 +70,9 @@ export default {
         top: 0;
         left: 0;
         z-index: 999;
+        p{
+            font-size: 0.8rem;
+        }
         .info_banner{
             padding: 0.3rem;
             background-color:$bg-color-header;

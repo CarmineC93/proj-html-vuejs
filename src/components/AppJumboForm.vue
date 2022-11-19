@@ -32,8 +32,8 @@ export default {
                     </select>
     
                     <div class="col d-flex flex-grow-1">
-                        <a href="" class="ms_btn_full"> GET IN TOUCH</a>
-                        <a href="" class="ms_btn_void"> READ MORE</a>
+                        <a href="" class="ms_btn ms_btn_full"> GET IN TOUCH</a>
+                        <a href="" class="ms_btn ms_btn_void"> READ MORE</a>
                     </div>
                 </form>
             </div>
@@ -51,10 +51,10 @@ export default {
     background-repeat: no-repeat;
 
     .get_in_touch{
-        width: 44%;
+        width: 35%;
         margin-top: 3rem;
         h6{
-            font-size: 0.8rem;
+            font-size: 0.9rem;
             color: $text-color-special;
         }
 
@@ -70,6 +70,7 @@ export default {
             border: 1px solid $text-color-soft;
             padding: 0.5rem 0 0.5rem 12px;
             border-radius: 5px;
+            font-size: 0.8rem;
         }
         
         button, a{
