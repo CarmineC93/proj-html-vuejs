@@ -13,8 +13,8 @@ export default {
                 <div class="col ms_hhp">
                     <h6>About the network</h6>
                     <h2> <span class="ms_evidence">The</span>  Company</h2>
-                    <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, non.
-                        Lorem ipsum dolor sit amet dolor consectetur.
+                    <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit, amet consectetur elit non sit adipisicing. Officia, non dolor sit amet.
+                        Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet benedictes.
                     </p>
                         <br>
                     <p>Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet. Lorem ipsum elit sit consectetur.</p> 
@@ -56,7 +56,7 @@ section{
     p{
         color: $text-color-soft;
     }
-    .col:first-child{
+    .row .col:first-child{
         padding-right:2rem
     }
     i{

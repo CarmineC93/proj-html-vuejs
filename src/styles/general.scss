@@ -30,8 +30,7 @@ a{
     text-decoration: none;}
 
 a:hover{
-    // debug
-    color: rgb(0, 255, 0)
+    color: red;
 }
 
 // Buttons
@@ -47,6 +46,11 @@ a:hover{
     background-color: $bg-button;
 }
 
+.ms_btn_full:hover {
+    background-color: rgb(104, 139, 79);
+    color: white;
+}
+
 .ms_btn_void{
     color: $bg-button;
 }
@@ -54,7 +58,8 @@ a:hover{
 .ms_botton-down{
     display: flex;
     align-items: flex-end;
-    margin-bottom: 2rem;
+    justify-content: flex-end;
+    margin-bottom: 1rem;
     width: 20%;
 }
 
@@ -74,7 +79,12 @@ a:hover{
 .ms_evidence{
     padding: 0.3rem 0.5rem;
     background-color: $bg-evidence;
-    ;
+}
+
+.ms_evidence_light{
+    padding: 0.1rem 0.5rem;
+    background-color: $bg-evidence-light;
+    color: $text-color-special;
 }
 
 .logo{
@@ -95,7 +105,7 @@ a:hover{
 .ms_hhp{
     h6{
         text-transform: uppercase;
-        font-size: 0.7rem;
+        font-size: 0.8rem;
         color: $text-color-special;
     }
     h2{
