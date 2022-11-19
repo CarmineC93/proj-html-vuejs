@@ -1,4 +1,9 @@
+@use "./partials/variables" as *;
+
 @import "node_modules/bootstrap/scss/bootstrap";
+@import "node_modules/@fortawesome/fontawesome-free/css/all.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
 
 // RESET
 *{
@@ -11,31 +16,65 @@ img{
     max-width: 100%;
 }
 
-a{
-    color: inherit;
-    text-decoration: none;}
-
 h1{
     font-size: 3rem;
     font-weight: 900;
 }
 
+p{
+    font-size: 0.8rem;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;}
+
+
 // COMMON
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
 
 .container{
     width: 80%;
     max-width: 1200px;
     margin: 0 auto;
-    // debug
-    background-color: rgba(255, 196, 0, 0.324);
 }
 
 .ms_btn_full{
     color:white;
+    background-color: $bg-button;
+    padding: 0.5rem 1rem;
+    border: 1px solid $bg-button;
+    border-radius: 5px;
+    font-size: 0.8rem;
 }
 
 .ms_btn_void{
     color:white;
+}
+
+.ms_botton-down{
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 2rem;
+    width: 20%;
+}
+
+.logo{
+    letter-spacing: 5px;
+    .green_space{
+        border-radius: 15px 0 0 15px;
+        padding: .4rem 0rem .4rem .6rem;
+        background-color: $bg-very-soft;
+        color:$text-color-special;
+    }
+    span{
+        border-radius: 0 15px 15px 0;
+        padding: .4rem 0 .4rem 0.1rem;
+        color: $bg-color;
+    }
 }
 
 .ms_hhp{
@@ -43,7 +82,6 @@ h1{
         text-transform: uppercase;
         font-size: 0.6rem;
     }
-
     h2{
         margin: 1rem 0;
         font-size: 2rem;
@@ -52,11 +90,4 @@ h1{
     p{
         font-size: small;
     }
-}
-
-.ms_botton-down{
-    display: flex;
-    align-items: flex-end;
-    margin-bottom: 2rem;
-    width: 20%;
 }
