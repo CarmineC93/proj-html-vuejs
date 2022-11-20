@@ -16,7 +16,6 @@ export default {
 @use "../styles/partials/variables.scss" as *;
 
 li{
-    list-style-type: none;
     text-transform: uppercase;
     font-size: 0.9rem;
 

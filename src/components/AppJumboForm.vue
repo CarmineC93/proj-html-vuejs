@@ -13,16 +13,16 @@ export default {
                 <h6>FUSIONS & ACQUISITION</h6>
                 <h1>Insurance Consulting</h1>
                 <form class="d-flex row row-cols-2">
-                    <label for="name">name</label>
+                    <label class="d-none" for="name">name</label>
                     <input class="col" type="text" id="name" placeholder="Name">
     
-                    <label for="email">email</label>
+                    <label class="d-none" for="email">email</label>
                     <input class="col" type="email" id="email" placeholder="Email">
                 
-                    <label for="phone">phone</label>
+                    <label class="d-none" for="phone">phone</label>
                     <input class="col" type="tel" id="phone" pattern="[0-9]{9-11}" placeholder="Phone">
     
-                    <label for="more">more</label>
+                    <label class="d-none" for="more">more</label>
                     <select class="col" name="more" id="more">
                         <option value="More Info">More Info</option>
                         <option value="About">About us</option>
@@ -57,11 +57,6 @@ export default {
             font-size: 0.9rem;
             color: $text-color-special;
         }
-
-        label{
-            display: none;
-        }
-
         input, select{
             width: 45%;
             margin: 0.5rem 0 0 10px;

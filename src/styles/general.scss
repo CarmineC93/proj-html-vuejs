@@ -25,6 +25,14 @@ h1{
 //     font-size: 0.8rem;
 // }
 
+ul{
+    padding-left: 0;
+}
+
+li{
+    list-style-type: none;
+}
+
 a{
     color: inherit;
     text-decoration: none;}
@@ -44,16 +52,17 @@ a:hover{
 .ms_btn_full{
     color:$text-color;
     background-color: $bg-button;
-}
 
-.ms_btn_full:hover {
+    &:hover {
     background-image: radial-gradient(rgb(50, 153, 168), rgb(113, 153, 194))  ;
     border: 1px solid rgb(113, 153, 194);
     color: $text-color;
+    }
 }
 
 .ms_btn_void{
     color: $bg-button;
+    background-color: transparent;
 }
 
 .ms_botton-down{
@@ -90,17 +99,39 @@ a:hover{
 .logo{
     letter-spacing: 5px;
     .green_space{
-        border-radius: 15px 0 0 15px;
-        padding: .4rem 0rem .4rem .6rem;
-        background-color: $bg-very-soft;
-        color:$text-color-special;
+        border-radius: 17px 0 0 17px;
+        padding: .4rem 0rem .4rem 1rem;
+        background-color: $bg-soft-green;
+        color:$bg-button;
+        h6{
+            font-weight: bold;
+        }
     }
     span{
         border-radius: 0 15px 15px 0;
         padding: .4rem 0 .4rem 0.1rem;
         color: $bg-color;
+        font-weight: bold;
     }
 }
+
+.logo-footer{
+        letter-spacing: 5px;
+        .green_space{
+            border-radius: 17px 0 0 17px;
+            padding: .4rem 0rem .4rem 1rem;
+            background-color: $bg-dark-green;
+            color:#3fd2d2 ;
+            font-weight: 500;
+            font-size: larger;
+        }
+        span{
+            border-radius: 0 15px 15px 0;
+            padding: .4rem 0 .4rem 0.1rem;
+            color: $text-color;
+            font-size: larger;
+        }
+    }
 
 .ms_hhp{
     h6{
@@ -121,11 +152,15 @@ a:hover{
 //Form
 input, select{
     background-color: $text-color-soft-trsp;
-    color: $text-color-grey;
+    color: $bg-color;
     border: 1px none $text-color-soft-trsp;
     padding: 0.6rem 0 0.6rem 12px;
     border-radius: 4px;
     font-size: 0.8rem;
+}
+
+form select{
+    color: $text-color-grey;
 }
 
 input:focus-visible {
