@@ -9,23 +9,23 @@ export default {
 <template>
     <section class="wrapper">
         <div class="container py-5">
-            <div class="row py-5">
-                <div class="col-6 ms_hhp">
+            <div class="row py-5 px-5">
+                <div class="col-5 ms_hhp">
                     <h6>NEWSLETTER</h6>
-                    <h2>Know First</h2>
-                    <p>Follow closely and receive content about our comany and the news of the current market.</p>
+                    <h2><span class="ms_evidence">Know</span> First</h2>
+                    <p>Follow closely and receive content about our company and the news of the current market.</p>
                 </div>
     
-                <div class="col-6">
+                <div class="col-7 px-3 my-5">
                     <form class="d-flex flex-column">
-                        <label for="name">Name</label>
+                        <label class="d-none" for="name">Name</label>
                         <input type="text" id="name" placeholder="Name">
     
-                        <label for="email">Email</label>
+                        <label class="d-none" for="email">Email</label>
                         <input type="email" id="email" placeholder="Email">
                     </form>
                     <div>
-                        <button>SUBSCRIBE</button>
+                        <button class="ms_btn ms_btn_full">SUBSCRIBE</button>
                     </div>
                 </div>
             </div>
@@ -35,6 +35,8 @@ export default {
 </template>
 
 <style lang="scss" scoped>  
+@use "../styles/partials/variables.scss" as *;
+
 .wrapper{
     background-image: url(../assets/img/bg-1.jpg);
     background-size: cover;
@@ -44,13 +46,9 @@ export default {
         color: white;
     }
 
-    label{
-        display: none;
-    }
     input{
         width: 70%;
         margin-bottom: 1rem;
-        padding: 0 1rem;
     }
 }
     

@@ -65,17 +65,10 @@ export default {
         input, select{
             width: 45%;
             margin: 0.5rem 0 0 10px;
-            background-color: $text-color-soft;
-            color: $text-color-grey;
-            border: 1px solid $text-color-soft;
-            padding: 0.5rem 0 0.5rem 12px;
-            border-radius: 5px;
-            font-size: 0.8rem;
         }
         
         button, a{
             margin: 0.7rem 0.7rem 0 0;
-
         }
     }
 }

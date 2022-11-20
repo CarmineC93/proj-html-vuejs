@@ -102,7 +102,7 @@ export default{
 section{
     background-color: $bg-color;
     color:$text-color;
-    p, h6{
+    p, .team h6{
         color:$text-color-soft;
     }
 

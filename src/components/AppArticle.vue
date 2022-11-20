@@ -38,4 +38,8 @@ span{
         padding: 1rem;
     }
 }
+
+span:hover img{
+    filter:brightness(0.7);
+}
 </style>

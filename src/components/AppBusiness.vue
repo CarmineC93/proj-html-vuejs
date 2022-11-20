@@ -48,9 +48,6 @@ export default{
 }
 .ms_hhp{
     width: 80%;
-    p{
-    color: $text-color-grey;
-    }
 }
 .ms_grid{
     gap: 2rem;
