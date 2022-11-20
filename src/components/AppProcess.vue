@@ -103,6 +103,9 @@ export default{
                     color: $text-color-special;
                     font-weight: 800;
                 }
+                &:hover span{
+                    color: rgb(81, 165, 145);
+                }
                 p{
                     line-height: 1.4rem;
                 }
@@ -113,24 +116,19 @@ export default{
 }
 
 @media screen and (max-width:475px){
-    
     #process .ms_hhp {
         width: 70%;
         h2{
             font-size: 1.5rem;
-            
         }
     }
     #process .ms_liner {
     left: 0px;
     transform: rotate(90deg);
     }
-
-
     .ms_large_void .ms_first_liner{
         display: none;
     }
-
     .row {
         flex-direction: column;
         .item span{
@@ -149,7 +147,5 @@ export default{
             display: none;
         }
     }
-
-
 }
 </style>

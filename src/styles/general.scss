@@ -30,7 +30,7 @@ a{
     text-decoration: none;}
 
 a:hover{
-    color: red;
+    color: rgb(0, 229, 255);
 }
 
 // Buttons
@@ -42,13 +42,14 @@ a:hover{
 }
 
 .ms_btn_full{
-    color:white;
+    color:$text-color;
     background-color: $bg-button;
 }
 
 .ms_btn_full:hover {
-    background-color: rgb(104, 139, 79);
-    color: white;
+    background-image: radial-gradient(rgb(50, 153, 168), rgb(113, 153, 194))  ;
+    border: 1px solid rgb(113, 153, 194);
+    color: $text-color;
 }
 
 .ms_btn_void{
@@ -67,9 +68,8 @@ a:hover{
 
 /* body{
      font-family: 'Ubuntu', sans-serif;
-}
-*/ 
-
+}*/
+ 
 .container{
     width: 75%;
     max-width: 1200px;
@@ -113,8 +113,6 @@ a:hover{
         font-size: 2.8rem;
         font-weight: 900;
     }
-    // p{
-    // }
 }
 
 input:focus-visible {
