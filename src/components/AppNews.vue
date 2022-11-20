@@ -16,16 +16,16 @@ export default{
 </script>
 
 <template>
-    <section class="container py-5" id="blog">
+    <section class="container py-5 my-5" id="blog">
         
-            <div class="col d-flex ">
+            <div class="col d-flex justify-content-between mb-4">
                 <div class="ms_hhp">
                     <h6>OUR EDITORIAL CONTENT</h6>
-                    <h2>Latest News</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus distinctio odio nisi ipsum perferendis nesciunt officiis repudiandae voluptates optio sit expedita in, id aliquam quasi.</p>
+                    <h2>Latest <span class="ms_evidence_light">News</span> </h2>
+                    <p>Every week we publish content about what is best in the business world.</p>
                 </div>
                 <div class="ms_botton-down">
-                    <button >SEE ALL</button>
+                    <button class="ms_btn ms_btn_full">SEE ALL</button>
                 </div>
             </div>
             <div class="row row-cols-3">

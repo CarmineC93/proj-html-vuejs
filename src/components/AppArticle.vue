@@ -16,7 +16,7 @@ export default{
 <template>
     <span v-if="item.active">
         <img :src="getImageUrl(`${item.img}`)" :alt="`${item.title}`">
-        <h4>{{item.title}}</h4>
+        <h3>{{item.title}}</h3>
     </span> 
 </template>
 
@@ -28,12 +28,12 @@ span{
         border-radius: 10px;
 
     }
-    h4{
+    h3{
         position: absolute;
         bottom: 10px;
         left: 1rem;
         color: white;
-        font-size: 1.4rem;
+        font-size: 1.8rem;
         text-align: center;
         padding: 1rem;
     }

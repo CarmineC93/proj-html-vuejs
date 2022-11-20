@@ -76,14 +76,13 @@ export default{
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
 
             <div class="ms_col_40 d-flex align-items-end justify-content-end my-2">
                 <div class="ms_speech">
                     <h4 class="pb-3">President Speech</h4>
-                    <p>Lorem, ipsum dolor sit amet consectetur soluta adipisicing elit. Quia quasi id eveniet aliquid cum soluta!</p>
+                    <p>Lorem, ipsum dolor sit amet, consectetur soluta adipisicing elit. Lorem ipsum dolor sit.</p>
                     <p>Quia sit doloribus assumenda laboriosam, aliquam quasi id eveniet aliquid cum soluta! Provident sequi accusamus nostrum, quas officiis, harum suscipit eum eveniet architecto velit autem.</p>
                     <p>Itaque, velit autem. Lorem ipsum dolor sit amet consectetur adipisicing.</p>
                     <span class="d-flex justify-content-between">
@@ -92,13 +91,10 @@ export default{
                     </span>
                 </div>
             </div>
-
         </div>
-
-
-
     </section>
 </template>
+
 
 <style lang="scss" scoped>
 @use "../styles/partials/variables.scss" as *;
@@ -150,7 +146,7 @@ section{
 
 
         .ms_speech{
-            width: 80%;
+            width: 75%;
             background-color: rgb(23, 141, 141);
             border-radius: 5px;
             padding: 2rem;
