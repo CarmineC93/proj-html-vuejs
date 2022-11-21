@@ -166,11 +166,17 @@ section{
     #team .container{
         flex-direction: column;
 
-        .ms_col_60{
+        .ms_col_60 {
         width: 100%;
-        .pic{
-            min-width: 45%;
-        }
+            .pic{
+                min-width: 45%;
+            }
+            .team_mate{
+                a{
+                    width: 15px;
+                    height: 15px;
+                }
+            }
         }
         .ms_col_40{
             width: 100%;

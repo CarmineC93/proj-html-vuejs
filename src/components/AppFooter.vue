@@ -9,7 +9,7 @@ export default{
     <footer class="pt-5">
         <div class="ms_top_footer py-5">
             <div class="container">
-                <div class="row">
+                <div class="row  row-cols-lg-4  row-cols-md-2  row-cols-sm-1">
                     <div class="col">
 
                         <div class="logo-footer mt-2">
@@ -194,7 +194,6 @@ footer{
 
     .ms_sub_footer{
         background-color: black;
-        height: 65px;       
         line-height: 65px;
         vertical-align: middle;
         .col{

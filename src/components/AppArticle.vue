@@ -14,7 +14,7 @@ export default{
 </script>
 
 <template>
-    <span v-if="item.active">
+    <span v-if="item.active" class="py-md-3 py-sm-3">
         <img :src="getImageUrl(`${item.img}`)" :alt="`${item.title}`">
         <h3>{{item.title}}</h3>
     </span> 
@@ -26,7 +26,9 @@ span{
     img{
         filter:brightness(0.5);
         border-radius: 10px;
-
+    }
+    &:hover img{
+    filter:brightness(0.7);
     }
     h3{
         position: absolute;
@@ -39,7 +41,13 @@ span{
     }
 }
 
-span:hover img{
-    filter:brightness(0.7);
+//RESPONSIVE
+
+@media screen and (max-width: 1040px){
+    span{
+        h3{
+            font-size: 1.5rem;
+        }
+    }
 }
 </style>
