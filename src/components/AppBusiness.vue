@@ -52,6 +52,23 @@ export default{
 .ms_grid{
     gap: 2rem;
     justify-content: space-between;
+}
 
+// RESPONSIVE
+
+@media screen and (max-width: 1250px){
+    #services{
+        .ms_grid{
+            gap: 0.8rem;
+            }
+        }
+}
+
+@media screen and (max-width: 767px){
+    #services{
+        .ms_grid{
+            gap: 0.8rem;
+            }
+        }
 }
 </style>

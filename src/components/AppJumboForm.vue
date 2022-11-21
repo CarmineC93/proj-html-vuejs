@@ -8,7 +8,7 @@ export default {
 
 <template>
     <section class="jumbo" id="home">
-        <div class="container d-flex justify-content-end">
+        <div class="container d-flex">
             <div class="get_in_touch d-flex flex-column align-items-start " >
                 <h6>FUSIONS & ACQUISITION</h6>
                 <h1>Insurance Consulting</h1>
@@ -49,21 +49,56 @@ export default {
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
+    .container{
+        justify-content:flex-end;
+        .get_in_touch{
+            width: 35%;
+            margin-top: 3rem;
+            h1{
+                font-size: 3.8rem;
+                font-weight: 900;
+            }
+            h6{
+                font-size: 0.9rem;
+                color: $text-color-special;
+            }
+            input, select{
+                width: 45%;
+                margin: 0.5rem 0 0 10px;
+            }
+            
+            button, a{
+                margin: 0.7rem 0.7rem 0 0;
+            }
+        }
+    }
+}
 
-    .get_in_touch{
-        width: 35%;
-        margin-top: 3rem;
-        h6{
-            font-size: 0.9rem;
-            color: $text-color-special;
+// RESPONSIVE
+
+@media screen and (max-width: 900px){
+    .jumbo .container{
+        background-color: rgba(255, 255, 255, 0.492) ;
+        border-radius: 10px;
+        padding: 1rem;
+        justify-content:center;
+        .get_in_touch{
+            width: 80%;
+            h1{
+            font-size: 2.8rem;
+            }
         }
-        input, select{
-            width: 45%;
-            margin: 0.5rem 0 0 10px;
-        }
-        
-        button, a{
-            margin: 0.7rem 0.7rem 0 0;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .jumbo .container{
+        justify-content:flex-start;
+        .get_in_touch{
+            width: 100%;
+            h1{
+             font-size: 2.8rem;
+            }
         }
     }
 }

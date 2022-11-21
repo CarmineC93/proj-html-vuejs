@@ -18,11 +18,11 @@ export default {
 
 <template>
     <header>
-        <div class="info_banner d-flex align-items-center">
+        <div class="info_banner align-items-center">
             <div class="container">
                 <div class="d-flex justify-content-between">
                     <div class="d-flex align-items-center">
-                        <p><i class="fa-solid fa-clock"></i> Open Hours: Mon-Sat 09:00 - 18:00</p>
+                        <p> <i class="fa-solid fa-clock"></i> <span class="ms_cut">Open Hours:</span> Mon-Sat 09:00 - 18:00</p>
                     </div>
 
                     <div class="contacts d-flex align-items-center">
@@ -49,20 +49,28 @@ export default {
                     <h6><span class="green_space">NEX</span><span>GEN</span></h6>
                 </div>
                 
-                <ul class="d-flex" >
+                
+                <ul>
                     <AppNav v-for="(link, index) in store.pages" :key="index" :pageName="link.name"/>
                 </ul>
+
+                <div class="hamburger-menu">
+                     <i class="fa-solid fa-bars"></i>            
+                </div>
 
                 <a href="" class="ms_btn ms_btn_full ms-3"> GET IN TOUCH</a>
                 
             </nav>           
         </div>
+
+        <!-- mobile/tablet menu button -->
+
+
     </header>
 </template>
 
 <style lang="scss" scoped>
 @use "../styles/partials/variables.scss" as *;
-
 
     header{
         width: 100%;
@@ -74,6 +82,7 @@ export default {
             font-size: 0.8rem;
         }
         .info_banner{
+            display: flex;
             padding: 0.3rem;
             background-color:$bg-color-header;
             color: $text-color-soft;
@@ -97,9 +106,56 @@ export default {
                 flex-grow: 1;
             }
             ul{
+                display: flex;
                 margin-bottom: 0;
                 gap: 1rem;
             }
+            .hamburger-menu{
+                display: none;
+            }
         }
     }
+
+    // RESPONSIVE
+    
+    @media screen and (max-width: 767px){
+        .ms_cut{
+            display: none;
+        }
+        .float_header{ 
+            ul li{
+            font-size: 0.7rem;
+            }
+            .ms_btn{
+                padding: 0.3rem 0.2rem;
+                border-radius: 4px;
+                font-size: 0.5rem;
+            }
+        }
+    }
+
+    @media screen and (max-width: 600px){
+        header{
+            .info_banner{
+                display: none;
+
+            }
+            .float_header {
+                nav ul {
+                display: none;
+                }
+
+                .hamburger-menu{
+                    display: block;
+                }
+                .ms_btn{
+                    padding: 0.3rem 0.2rem;
+                    border-radius: 4px;
+                    font-size: 0.5rem;
+                }
+            }
+        }
+    }
+
+
 </style>

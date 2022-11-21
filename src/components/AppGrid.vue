@@ -10,7 +10,7 @@ export default{
 </script>
 
 <template>
-        <div class="col-3 col">
+        <div class="col col-3">
             <div class="ms_icons d-flex justify-content-between py-3">
                 <i :class="icon"></i>  
                 <a href=""> <i class="fa-solid fa-arrow-right"></i></a>
@@ -19,7 +19,6 @@ export default{
                 <h4 class="py-3"><strong>{{serviceName}}</strong></h4>
                 <p>{{text}}</p>
             </div>
-
         </div>
 </template>
 
@@ -33,7 +32,7 @@ p{
     color: black;
     border-radius: 10px;
     width: 31%;     
-    padding: 1.5rem;   
+    padding: 2.3rem;   
     .ms_icons i{
         color:$text-color-special;
         font-size: 1.8rem;

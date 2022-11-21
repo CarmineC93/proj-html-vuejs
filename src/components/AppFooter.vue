@@ -193,22 +193,20 @@ footer{
     }
 
     .ms_sub_footer{
-            background-color: black;
-            height: 65px;       
-            line-height: 65px;
-            vertical-align: middle;
-            .col{
-                padding: 0;
-                p{
-                    margin-bottom: 0;
-                    font-size: 0.8rem;
-                    .ms_green{
-                        color: $bg_button;
-                    }
+        background-color: black;
+        height: 65px;       
+        line-height: 65px;
+        vertical-align: middle;
+        .col{
+            padding: 0;
+            p{
+                margin-bottom: 0;
+                font-size: 0.8rem;
+                .ms_green{
+                    color: $bg_button;
                 }
             }
-
-
+        }
     }
 }
 

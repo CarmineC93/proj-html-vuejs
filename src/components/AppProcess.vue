@@ -148,4 +148,15 @@ export default{
         }
     }
 }
+
+// RESPONSIVE
+
+@media screen and (max-width: 767px){
+    #process .ms_hhp {
+        width: 70%;
+        h2{
+            font-size: 2rem;
+        }
+} }
+
 </style>

@@ -9,7 +9,7 @@ export default {
 <template>
     <section>
         <section class="container py-5" id="about">
-            <div class="row py-5">
+            <div class="row row-cols-2  row-cols-lg-2 row-cols-md-1  py-5">
                 <div class="col ms_hhp">
                     <h6>About the network</h6>
                     <h2> <span class="ms_evidence">The</span>  Company</h2>
@@ -20,7 +20,7 @@ export default {
                     <p>Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet. Lorem ipsum elit sit consectetur.</p> 
                     
                 </div>
-                <div class="col row row-cols-2">
+                <div class="col row row-cols-2 ">
                     <div class="item col p-2">
                         <i class="fa-solid fa-award"></i>
                         <h4>Tradition</h4>
@@ -68,4 +68,18 @@ section{
         margin: 1rem 0.5rem;
     }
 }
+
+// RESPONSIVE
+
+@media screen and (max-width: 767px){
+    .row{
+        .col{
+            .item h4{ 
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+
 </style>

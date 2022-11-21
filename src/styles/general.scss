@@ -16,15 +16,6 @@ img{
     max-width: 100%;
 }
 
-h1{
-    font-size: 3.8rem;
-    font-weight: 900;
-}
-
-// p{
-//     font-size: 0.8rem;
-// }
-
 ul{
     padding-left: 0;
 }
@@ -38,7 +29,7 @@ a{
     text-decoration: none;}
 
 a:hover{
-    color: rgb(0, 229, 255);
+    color: $text-color-h6;
 }
 
 // Buttons
@@ -54,7 +45,7 @@ a:hover{
     background-color: $bg-button;
 
     &:hover {
-    background-image: radial-gradient(rgb(50, 153, 168), rgb(113, 153, 194))  ;
+    background-image: radial-gradient(rgb(113, 153, 194), rgb(50, 153, 168))  ;
     border: 1px solid rgb(113, 153, 194);
     color: $text-color;
     }
@@ -169,5 +160,14 @@ input:focus-visible {
 
 select:focus-visible {
     outline: 1px auto $bg-button;
+}
+
+
+@media screen and (max-width: 767px){
+   .container {
+        width: 97%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
 }
 
