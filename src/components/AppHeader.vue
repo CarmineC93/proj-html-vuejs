@@ -11,13 +11,23 @@ export default {
         return{
             store
         }
+    },
+    created : function(){
+
+        window.addEventListener('scroll', function() {
+        const header = document.getElementById('float-header');
+        console.log(window.pageYOffset + "px" )
+        header.className = window.pageYOffset >= 550 ? 'float_header container p-4 header-colored' : 'float_header container p-4 header-transparent';
+        header.className =  window.pageYOffset > 550 && window.pageYOffset <= 1100 ? 'float_header container p-4 header-colored': 'float_header container p-4 header-transparent';
+        });
     }
 }
+// }document.body.scrollTop
 
 </script>
 
 <template>
-    <header>
+    <header id="header">
         <div class="info_banner align-items-center">
             <div class="container">
                 <div class="d-flex justify-content-between">
@@ -42,7 +52,7 @@ export default {
             </div>
         </div>
         
-        <div class="float_header container p-4">
+        <div class="float_header container p-4" id="float-header">
             <nav class="d-flex justify-content-between align-items-center">
 
                 <div class="logo">
@@ -99,8 +109,17 @@ export default {
                 }
             }
         }
-        .float_header{
+
+
+
+        .header-transparent{
             background-color: rgba(255, 250, 250, 0.305);
+        }
+        .header-colored{
+            background-color: rgba(248, 246, 246, 0.851);
+        }
+        
+        .float_header{
             border-radius: 0 0 25px 25px;
             .logo{
                 flex-grow: 1;
