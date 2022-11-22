@@ -1,6 +1,6 @@
 <script>
 export default {
-    name: "AppNav",
+    name: "AppNavSmart",
     props: {
         pageName: String,
     }
@@ -9,7 +9,7 @@ export default {
 </script>
 
 <template>
-        <li> <a :href="`#${pageName}`" >{{pageName}}</a> </li> 
+            <li> <a :href="`#${pageName}`" >{{pageName}}</a> </li> 
 </template>
 
 <style lang="scss" scoped>

@@ -1,19 +1,35 @@
 <script>
 import {store} from "../store";
 import AppNav from "./AppNav.vue"
+import AppNavSmart from "./AppNavSmart.vue"
+
 
 export default {
     name: "AppHeader",
     components:{
-      AppNav  
+      AppNav,
+      AppNavSmart, 
     },
     data(){
         return{
-            store
+            store,
+            smartReveal : false,
         }
     },
-    created : function(){
+    methods:{
+        openMenu(){
+            const smartMenu = document.getElementById('smart-menu');
 
+            if(this.smartReveal === false){
+                smartMenu.className = "smart-menu"
+            } else {
+                smartMenu.className = "smart-menu-none";
+                this.smartReveal === false;
+            } 
+        }
+    },
+
+    created : function(){
         window.addEventListener('scroll', function() {
         const header = document.getElementById('float-header');
         console.log(window.pageYOffset + "px" )
@@ -22,7 +38,6 @@ export default {
         });
     }
 }
-// }document.body.scrollTop
 
 </script>
 
@@ -64,8 +79,14 @@ export default {
                     <AppNav v-for="(link, index) in store.pages" :key="index" :pageName="link.name"/>
                 </ul>
 
-                <div class="hamburger-menu">
+                <div class="hamburger-menu" @click="openMenu">
                      <i class="fa-solid fa-bars"></i>            
+                </div>
+
+                <div class="smart-menu-none" id="smart-menu">
+                    <ul class="d-flex flex-column">
+                        <AppNavSmart v-for="(link, index) in store.pages" :key="index" :pageName="link.name"/>
+                    </ul>
                 </div>
 
                 <a href="" class="ms_btn ms_btn_full ms-3"> GET IN TOUCH</a>
@@ -131,6 +152,17 @@ export default {
             }
             .hamburger-menu{
                 display: none;
+            }
+
+            .smart-menu-none{
+                display: none;
+            }
+
+            .smart-menu{
+                padding: 1rem;
+                background-color: rgba(255, 255, 255, 0.82);
+                width: 100px;
+                height: 200px;
             }
         }
     }
