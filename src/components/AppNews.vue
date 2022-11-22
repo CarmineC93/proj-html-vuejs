@@ -9,7 +9,24 @@ export default{
     },
     data(){
         return{
-            store
+            store,
+            buttonShow: "SEE ALL"
+            
+        }
+    },
+    methods:{
+        showMore(){
+            if(this.buttonShow === "SEE ALL"){
+                for(let i=0; i < this.store.articles.length; i++)
+                this.store.articles[i].active = true;
+                this.buttonShow = "SEE LESS"
+            } else {
+                for(let i=0; i < this.store.articles.length; i++)//5-3 = 2, cioè i box a cui si è applicato false.
+                    if(!this.store.articles[i].preview){
+                        this.store.articles[i].active = false;
+                    }
+                    this.buttonShow = "SEE ALL"
+            }
         }
     }
 }
@@ -25,7 +42,7 @@ export default{
                     <p>Every week we publish content about what is best in the business world.</p>
                 </div>
                 <div class="ms_botton-down">
-                    <button class="ms_btn ms_btn_full">SEE ALL</button>
+                    <button @click="showMore()" class="ms_btn ms_btn_full"> {{buttonShow}}</button>
                 </div>
             </div>
             <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 row-cols-xs-1">
@@ -38,5 +55,15 @@ export default{
 </template>
 
 <style lang="scss" scoped>
-
+//RESPONSIVE
+@media screen and (max-width: 575px){ 
+    #blog .row{
+        display: block; //la proprietà display flex, che con Bootstrap è di base in row, interferiva con il comando bootstramp delle row-col-sm e xs.
+        .col{
+            width: 70%;
+            margin: 2rem auto;
+            
+        }
+    }
+}
 </style>

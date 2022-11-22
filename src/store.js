@@ -75,31 +75,36 @@ export const store = reactive({
             title : "Increasing creativity is possible for everyone",
             url: "",
             img: "../assets/img/news-1.jpg",
-            active: true
+            active: true,
+            preview : true,
         },
         {   
             title : "Because market research is part of the business plan",
             url: "",
             img: "../assets/img/news-2.jpg",
-            active: true
+            active: true,
+            preview : true,
         },
         {   
             title : "Working from home is now a trend",
             url: "",
             img: "../assets/img/news-3.jpg",
-            active: true
+            active: true,
+            preview : true,
         },
         {   
             title : "water boils to 100°C",
             url: "",
             img: "../assets/img/news-4.jpg",
-            active: false      
+            active: false,
+            preview : false,    
         },
         {   
-            title : "Where the middle seasones gone?",
+            title : "Where did the mid-seasones go?",
             url: "",
             img: "../assets/img/news-5.jpg",
-            active: false
+            active: false,
+            preview : false,
         },
     ],
     //qui i recapiti di contatto inseriti dall'utente
