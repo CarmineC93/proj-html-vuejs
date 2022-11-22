@@ -96,10 +96,13 @@ export const store = reactive({
             active: false      
         },
         {   
-            title : "Where the middle seasone gone?",
+            title : "Where the middle seasones gone?",
             url: "",
             img: "../assets/img/news-5.jpg",
             active: false
         },
-    ]
+    ],
+    //in questo array andranno i recapiti di contatto inseriti dall'utente
+    requestes:[],
+
 });

@@ -31,7 +31,7 @@ export default{
                     </div>
                 </div>
 
-                <div class="ms_grid col row m-auto mt-4 mb-5">
+                <div class="ms_grid col row row-cols-lg-1 row-cols-md-1 row-cols-md-1 m-auto mt-4 mb-5">
                     <AppGrid v-for="(service, index) in store.services" :key="index" :serviceName="service.name" 
                         :text="service.text" :icon="service.icon" />
                 </div>
@@ -60,8 +60,8 @@ export default{
     #services{
         .ms_grid{
             gap: 0.8rem;
-            }
         }
+    }
 }
 
 @media screen and (max-width: 767px){

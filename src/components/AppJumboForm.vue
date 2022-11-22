@@ -1,7 +1,32 @@
 <script>
+import { store } from "../store";
 
 export default {
     name: "AppJumboForm",
+    data(){
+        return{
+            store
+        }
+    },
+    methods: {
+        getInTouch() {
+            let requestUser = {}
+
+            requestUser.nameUser = document.getElementById('name').value;
+            requestUser.emailUser = document.getElementById('email').value;
+            requestUser.phoneUser = document.getElementById('phone').value;
+            requestUser.optionUser = document.getElementById('more').value;
+
+            this.store.requestes.push(requestUser);
+
+            console.log(this.store.requestes)
+
+            document.getElementById('name').value = "";
+            document.getElementById('email').value = "";
+            document.getElementById('phone').value = "";
+            document.getElementById('more').value = "More Info";
+        }
+    }
 }
 
 </script>
@@ -12,15 +37,15 @@ export default {
             <div class="get_in_touch d-flex flex-column align-items-start " >
                 <h6>FUSIONS & ACQUISITION</h6>
                 <h1>Insurance Consulting</h1>
-                <form class="d-flex row row-cols-2">
+                <div class="d-flex row row-cols-2">
                     <label class="d-none" for="name">name</label>
-                    <input class="col" type="text" id="name" placeholder="Name">
+                    <input class="col" type="text" value="" id="name" placeholder="Name">
     
                     <label class="d-none" for="email">email</label>
-                    <input class="col" type="email" id="email" placeholder="Email">
+                    <input class="col" type="email" value="" id="email" placeholder="Email">
                 
                     <label class="d-none" for="phone">phone</label>
-                    <input class="col" type="tel" id="phone" pattern="[0-9]{9-11}" placeholder="Phone">
+                    <input class="col" type="tel" value="" id="phone" pattern="[0-9]{9-11}" placeholder="Phone">
     
                     <label class="d-none" for="more">more</label>
                     <select class="col" name="more" id="more">
@@ -32,10 +57,10 @@ export default {
                     </select>
     
                     <div class="col d-flex flex-grow-1">
-                        <a href="" class="ms_btn ms_btn_full"> GET IN TOUCH</a>
+                        <button class="ms_btn ms_btn_full" @click="getInTouch()"> GET IN TOUCH</button>
                         <a href="" class="ms_btn ms_btn_void"> READ MORE</a>
                     </div>
-                </form>
+                </div>
             </div>
         </div>
     </section>

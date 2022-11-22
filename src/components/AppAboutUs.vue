@@ -9,7 +9,7 @@ export default {
 <template>
     <section>
         <section class="container py-5" id="about">
-            <div class="row row-cols-2  row-cols-lg-2 row-cols-md-1  py-5">
+            <div class="row row-cols-lg-2 row-cols-md-1 row-cols-sm-1 row-cols-xs-1 py-5">
                 <div class="col ms_hhp">
                     <h6>About the network</h6>
                     <h2> <span class="ms_evidence">The</span>  Company</h2>
