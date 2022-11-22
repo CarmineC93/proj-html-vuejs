@@ -102,7 +102,8 @@ export const store = reactive({
             active: false
         },
     ],
-    //in questo array andranno i recapiti di contatto inseriti dall'utente
+    //qui i recapiti di contatto inseriti dall'utente
     requestes:[],
+    newsLetter: [],
 
 });

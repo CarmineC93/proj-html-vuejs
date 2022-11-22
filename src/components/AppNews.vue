@@ -30,7 +30,8 @@ export default{
             </div>
             <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 row-cols-xs-1">
                 <div class="col d-flex" v-for="(article, index) in store.articles" :key="index">
-                        <AppArticle :item="article" :title="article.title" :img="article.img" :active="article.active" />
+                    <!-- componente AppArticle -->
+                    <AppArticle :item="article" :title="article.title" :img="article.img" :active="article.active" />
                 </div>
             </div>
     </section>

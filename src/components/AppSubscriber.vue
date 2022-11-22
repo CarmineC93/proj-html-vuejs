@@ -1,7 +1,29 @@
 <script>
+import { store } from "../store";
 
 export default {
-    name: "AppSubscriber"
+    
+    name: "AppSubscriber",
+    data(){
+        return{
+            store
+        }
+    },
+    methods:{
+        addSubscription(){
+            let requestUser = {}
+
+            requestUser.nameUser = document.getElementById('name').value;
+            requestUser.emailUser = document.getElementById('email').value;
+
+            this.store.newsLetter.push(requestUser);
+
+            console.log(this.store.newsLetter)
+
+            document.getElementById('name').value = "";
+            document.getElementById('email').value = "";
+        }
+    }
 }
 
 </script>
@@ -19,13 +41,13 @@ export default {
                 <div class="col-lg-7 col-md-12 col-sm-12 px-3 my-5">
                     <form class="d-flex flex-column">
                         <label class="d-none" for="name">Name</label>
-                        <input type="text" id="name" placeholder="Name">
+                        <input type="text" id="name" value="" placeholder="Name">
     
                         <label class="d-none" for="email">Email</label>
-                        <input type="email" id="email" placeholder="Email">
+                        <input type="email" id="email" value="" placeholder="Email">
                     </form>
                     <div>
-                        <button class="ms_btn ms_btn_full">SUBSCRIBE</button>
+                        <button @click="addSubscription()" class="ms_btn ms_btn_full">SUBSCRIBE</button>
                     </div>
                 </div>
             </div>
@@ -49,6 +71,7 @@ export default {
     input{
         width: 70%;
         margin-bottom: 1rem;
+        background-color: #f1f1f080;
     }
 }
     
