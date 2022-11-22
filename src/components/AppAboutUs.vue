@@ -81,5 +81,9 @@ section{
     }
 }
 
-
+@media screen and (max-width: 756px){
+    .row:first-child{
+        display: block;
+    }
+}
 </style>

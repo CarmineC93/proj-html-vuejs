@@ -159,4 +159,13 @@ export default{
         }
 } }
 
+@media screen and (max-width: 576px){
+    #process .ms_hhp {
+        width: 70%;
+        h2{
+            font-size: 1.5rem;
+        }
+    }
+}
+
 </style>

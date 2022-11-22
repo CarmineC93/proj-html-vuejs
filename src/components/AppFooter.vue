@@ -209,5 +209,11 @@ footer{
     }
 }
 
+//RESPONSIVE
 
+@media screen and (max-width: 575px){
+    .ms_top_footer{
+        background-color: $bg-footer-box;
+    }
+}
 </style>

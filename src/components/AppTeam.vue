@@ -190,4 +190,14 @@ section{
     }
 }
 
+@media screen and (max-width: 450px){
+    .team{
+        display: block;
+        .col{
+            width: 100%;
+        }
+    }
+}
+
+
 </style>

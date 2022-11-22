@@ -34,7 +34,6 @@ export default{
 
 <template>
     <section class="container py-5 my-5" id="blog">
-        
             <div class="col d-flex justify-content-between mb-4">
                 <div class="ms_hhp">
                     <h6>OUR EDITORIAL CONTENT</h6>
@@ -45,6 +44,7 @@ export default{
                     <button @click="showMore()" class="ms_btn ms_btn_full"> {{buttonShow}}</button>
                 </div>
             </div>
+
             <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 row-cols-xs-1">
                 <div class="col d-flex" v-for="(article, index) in store.articles" :key="index">
                     <!-- componente AppArticle -->
@@ -61,8 +61,7 @@ export default{
         display: block; //la proprietà display flex, che con Bootstrap è di base in row, interferiva con il comando bootstramp delle row-col-sm e xs.
         .col{
             width: 70%;
-            margin: 2rem auto;
-            
+            margin: 2rem auto;  
         }
     }
 }

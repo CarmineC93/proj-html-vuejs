@@ -64,10 +64,17 @@ export default{
     }
 }
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 567px){
     #services{
         .ms_grid{
             gap: 0.8rem;
+            display: block;
+
+            .col{
+                width: 100%;
+                padding: 0.5rem;
+                margin-top: 1rem;
+            }
             }
         }
 }

@@ -107,7 +107,7 @@ export const store = reactive({
             preview : false,
         },
     ],
-    //qui i recapiti di contatto inseriti dall'utente
+    //qui i recapiti di contatto inseriti dall'utente nei due form
     requestes:[],
     newsLetter: [],
 
