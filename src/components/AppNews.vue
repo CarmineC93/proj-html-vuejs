@@ -21,7 +21,7 @@ export default{
                 this.store.articles[i].active = true;
                 this.buttonShow = "SEE LESS"
             } else {
-                for(let i=0; i < this.store.articles.length; i++)//5-3 = 2, cioè i box a cui si è applicato false.
+                for(let i=0; i < this.store.articles.length; i++)//5.length-3= 5-3 = 2, cioè i box a cui si è applicato false.
                     if(!this.store.articles[i].preview){
                         this.store.articles[i].active = false;
                     }

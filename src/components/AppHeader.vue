@@ -22,9 +22,13 @@ export default {
 
             if(this.smartReveal === false){
                 smartMenu.className = "smart-menu"
+                console.log("vedi");
+                this.smartReveal = true;
             } else {
-                smartMenu.className = "smart-menu-none";
-                this.smartReveal === false;
+                smartMenu.className = "smart-menu-none"
+                console.log("non vedi");
+
+                this.smartReveal = false;
             } 
         }
     },
@@ -32,7 +36,7 @@ export default {
     created : function(){
         window.addEventListener('scroll', function() {
         const header = document.getElementById('float-header');
-        console.log(window.pageYOffset + "px" )
+        // console.log(window.pageYOffset + "px" )
         header.className = window.pageYOffset >= 550 ? 'float_header container p-4 header-colored' : 'float_header container p-4 header-transparent';
         header.className =  window.pageYOffset > 550 && window.pageYOffset <= 1100 ? 'float_header container p-4 header-colored': 'float_header container p-4 header-transparent';
         });
@@ -142,6 +146,7 @@ export default {
         
         .float_header{
             border-radius: 0 0 25px 25px;
+            position: relative;
             .logo{
                 flex-grow: 1;
             }
@@ -160,9 +165,12 @@ export default {
 
             .smart-menu{
                 padding: 1rem;
-                background-color: rgba(255, 255, 255, 0.82);
+                background-color: #b7d7d7c0;
                 width: 100px;
-                height: 200px;
+                min-height: 240px;
+                position: absolute;
+                top: 29px;
+                right: 118px;
             }
         }
     }

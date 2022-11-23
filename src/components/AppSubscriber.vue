@@ -13,15 +13,15 @@ export default {
         addSubscription(){
             let requestUser = {}
 
-            requestUser.nameUser = document.getElementById('name').value;
-            requestUser.emailUser = document.getElementById('email').value;
+            requestUser.nameUser = document.getElementById('name-sub').value;
+            requestUser.emailUser = document.getElementById('email-sub').value;
 
             this.store.newsLetter.push(requestUser);
 
             console.log(this.store.newsLetter)
 
-            document.getElementById('name').value = "";
-            document.getElementById('email').value = "";
+            document.getElementById('name-sub').value = "";
+            document.getElementById('email-sub').value = "";
         }
     }
 }
@@ -40,11 +40,11 @@ export default {
     
                 <div class="col-lg-7 col-md-12 col-sm-12 px-3 my-5">
                     <form class="d-flex flex-column">
-                        <label class="d-none" for="name">Name</label>
-                        <input type="text" id="name" value="" placeholder="Name">
+                        <label class="d-none" for="name-sub">Name</label>
+                        <input type="text" id="name-sub" value="" placeholder="Name">
     
-                        <label class="d-none" for="email">Email</label>
-                        <input type="email" id="email" value="" placeholder="Email">
+                        <label class="d-none" for="email-sub">Email</label>
+                        <input type="email" id="email-sub" value="" placeholder="Email">
                     </form>
                     <div>
                         <button @click="addSubscription()" class="ms_btn ms_btn_full">SUBSCRIBE</button>
